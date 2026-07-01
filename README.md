@@ -151,14 +151,35 @@ Array 2:
 ✅ Dynamic size arrays (VLA)
 ✅ Swapping using temporary variables
 
----
+=====================================================================================================================================
 
-## 🎯 Learning Outcome
+# String Concatenation in C
 
-After completing this program, you will understand how arrays are passed to functions in C and how pointers allow direct modification of array elements.
+## 📌 Description
+This project implements a **string concatenation program in C** without using built-in string functions like `strcat()`.  
+The program takes two strings as input, joins the second string to the end of the first string, and displays the concatenated result.
 
----
+## 🛠️ Concepts Used
+- Functions in C
+- Function prototypes
+- Character arrays (strings)
+- Pointers
+- String manipulation
+- Null character (`'\0'`) handling
 
-## 👨‍💻 Author
+## 📂 Program Structure
 
-**Karthik T**
+### Functions Used:
+
+### 1. `input(char *str)`
+- Accepts a string from the user.
+- Stores the input in the character array using a pointer.
+
+### 2. `concatenate_strings(char *str1, char *str2)`
+- Finds the end of the first string.
+- Copies characters of the second string to the end of the first string.
+- Adds the null terminator to complete the new string.
+
+### 3. `display(char *str)`
+- Displays the final concatenated string.
+
